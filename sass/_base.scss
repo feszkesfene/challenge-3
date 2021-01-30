@@ -1,0 +1,40 @@
+//COLOR VARIABLES
+$pink-light: hsl(6, 100%, 80%);
+$pink-dark: hsl(335, 100%, 65%);
+$blue-pale: hsl(243, 100%, 93%);
+$blue-gray: hsl(229, 7%, 55%);
+$blue-dark: hsl(228, 56%, 26%);
+$blue-darkest: hsl(229, 57%, 11%);
+//FONT VARIABLES
+$font-default: 'Raleway', sans-serif;
+//BREAKPOINTS
+
+//MIXINS
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  //10px
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: $font-default;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: $blue-pale;
+    background-color: $blue-darkest;
+}
