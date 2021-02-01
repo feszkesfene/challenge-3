@@ -14,11 +14,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 15;
+    width: 70%;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 75%;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 55%;
+    // }
 }
 
 .info {
     display: flex;
     align-items: flex-end;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-wrap: wrap;
+    }
 }
 
 .icon,
@@ -32,10 +45,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 34rem;
+    flex: 40%;
     height: 19rem;
     margin-right: 2.5rem;
     border-radius: .8rem 10rem .8rem .8rem;
+
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 60%;
+    //     margin-right: 0;
+    //     margin-bottom: 2.5rem;
+    // }
 
     &__logo img {
         height: 4.2rem;
@@ -67,10 +87,15 @@
 }
 
 .data {
-    width: 52rem;
+    // width: 52rem;
     height: 15rem;
+    flex: 60%;
+    // margin-right: 3rem;
     border-radius: .8rem;
-    // position: relative;
+        
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 60%;
+    // }
 
     &__text span {
         font-weight: 700;
@@ -84,7 +109,6 @@
         margin: 1.2rem 0 .5rem 0;
         z-index: 180;
         position: relative;
-        //display: hidden;
 
         &::before {
             position: absolute;
@@ -166,4 +190,3 @@
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
-

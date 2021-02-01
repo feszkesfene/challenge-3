@@ -15,6 +15,18 @@ html {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 83%;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -22,6 +34,7 @@ body {
   line-height: 1.6;
   color: #dddbff;
   background-color: #0c122c;
+  overflow: hidden;
 }
 
 .background {
@@ -39,6 +52,13 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 15;
+  width: 70%;
+}
+
+@media only screen and (max-width: 47em) {
+  .container {
+    width: 75%;
+  }
 }
 
 .info {
@@ -48,6 +68,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media only screen and (max-width: 40.6em) {
+  .info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .icon,
@@ -67,7 +94,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 34rem;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   height: 19rem;
   margin-right: 2.5rem;
   border-radius: .8rem 10rem .8rem .8rem;
@@ -106,8 +135,10 @@ body {
 }
 
 .data {
-  width: 52rem;
   height: 15rem;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
   border-radius: .8rem;
 }
 

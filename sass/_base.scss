@@ -8,6 +8,11 @@ $blue-darkest: hsl(229, 57%, 11%);
 //FONT VARIABLES
 $font-default: 'Raleway', sans-serif;
 //BREAKPOINTS
+$bp-large: 90em;   //1440px
+$bp-big: 60em;     //960px
+$bp-medium: 47em;  //752px
+$bp-small: 40.6em;   //650px
+
 
 //MIXINS
 @mixin flex {
@@ -28,6 +33,14 @@ html {
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 83%;  //12px
+    }
+
+    @media only screen and (max-width: $bp-big) {
+        font-size: 50%;  //8px
+    }
 }
 
 body {
@@ -37,4 +50,5 @@ body {
     line-height: 1.6;
     color: $blue-pale;
     background-color: $blue-darkest;
+    overflow: hidden;
 }
