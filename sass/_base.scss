@@ -9,9 +9,9 @@ $blue-darkest: hsl(229, 57%, 11%);
 $font-default: 'Raleway', sans-serif;
 //BREAKPOINTS
 $bp-large: 90em;   //1440px
-$bp-big: 60em;     //960px
-$bp-medium: 47em;  //752px
-$bp-small: 40.6em;   //650px
+$bp-big: 62.5em;     //1000px
+$bp-medium: 45.6em;  //730px
+$bp-small: 37.5em;   //600px
 
 
 //MIXINS
@@ -38,9 +38,9 @@ html {
         font-size: 83%;  //12px
     }
 
-    @media only screen and (max-width: $bp-big) {
-        font-size: 50%;  //8px
-    }
+//     @media only screen and (max-width: $bp-medium) {
+//         font-size: 50%;  //8px
+//     }
 }
 
 body {
